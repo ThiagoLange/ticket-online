@@ -1,7 +1,7 @@
 // src/components/molecules/MovieCard/MovieCard.tsx
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Movie } from '../../../data/movieTypes';
+import type { Movie } from '../../../data/movieTypes';
 import Button from '../../atoms/Button/Button';
 import Image from '../../atoms/Image/Image';
 import styles from './MovieCard.module.css';

@@ -1,6 +1,6 @@
 // src/components/organisms/MovieGrid/MovieGrid.tsx
 import React from 'react';
-import { Movie } from '../../../data/movieTypes';
+import type { Movie } from '../../../data/movieTypes';
 import MovieCard from '../../molecules/MovieCard/MovieCard';
 import styles from './MovieGrid.module.css';
 

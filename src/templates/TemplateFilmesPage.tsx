@@ -1,7 +1,7 @@
 // src/templates/TemplateFilmesPage.tsx
 import React from 'react';
 import MovieGrid from '../components/organisms/MovieGrid/MovieGrid';
-import { Movie } from '../data/movieTypes';
+import type { Movie } from '../data/movieTypes';
 
 interface TemplateFilmesPageProps {
   movies: Movie[];

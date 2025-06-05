@@ -1,6 +1,7 @@
 // src/components/organisms/ContactForm/ContactForm.tsx
 import React from 'react';
-import { useForm, SubmitHandler } from 'react-hook-form';
+import { useForm } from 'react-hook-form'; // Importa o hook useForm
+import type { SubmitHandler } from 'react-hook-form'; // Correction: Importa SubmitHandler como um tipo
 import Button from '../../atoms/Button/Button';
 import Input from '../../atoms/Input/Input';
 import styles from './ContactForm.module.css';
@@ -26,7 +27,13 @@ const ContactForm: React.FC = () => {
       <Input
         label="Seu E-mail:"
         type="email"
-        {...register('email', { required: 'E-mail é obrigatório', pattern: { value: /^\S+@\S+$/i, message: "Formato de e-mail inválido"} })}
+        {...register('email', { 
+          required: 'E-mail é obrigatório', 
+          pattern: { 
+            value: /^\S+@\S+$/i, 
+            message: "Formato de e-mail inválido"
+          } 
+        })}
         error={errors.email?.message}
       />
       <Input
@@ -38,10 +45,10 @@ const ContactForm: React.FC = () => {
       <Input
         label="Mensagem:"
         as="textarea"
-        rows={5}
+        rows={5} // Esta prop 'rows' DEVE ser aceita pela InputProps definida acima
         {...register('mensagem', { required: 'Mensagem é obrigatória' })}
         error={errors.mensagem?.message}
-      />
+/>
       <div className={styles.checkboxGroup}>
         <input
           type="checkbox"

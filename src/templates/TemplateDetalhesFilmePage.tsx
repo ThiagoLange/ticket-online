@@ -1,7 +1,7 @@
 // src/templates/TemplateDetalhesFilmePage.tsx
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Movie } from '../data/movieTypes';
+import type { Movie } from '../data/movieTypes';
 import Button from '../components/atoms/Button/Button';
 import Image from '../components/atoms/Image/Image';
 import styles from './TemplateDetalhesFilmePage.module.css'; // Crie este CSS module

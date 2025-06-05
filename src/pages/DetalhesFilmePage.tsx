@@ -3,7 +3,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import TemplateDetalhesFilmePage from '../templates/TemplateDetalhesFilmePage';
 import { mockMovies } from '../data/mockMovies'; // Importando o mock
-import { Movie } from '../data/movieTypes';
+import type { Movie } from '../data/movieTypes';
 
 const DetalhesFilmePage: React.FC = () => {
   const { id } = useParams<{ id: string }>();

@@ -1,5 +1,5 @@
 // src/data/mockMovies.ts
-import { Movie } from './movieTypes';
+import type { Movie } from './movieTypes';
 
 export const mockMovies: Movie[] = [
   {
