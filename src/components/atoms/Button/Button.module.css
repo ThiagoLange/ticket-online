@@ -1,0 +1,45 @@
+/* src/components/atoms/Button/Button.module.css */
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.button:active {
+    transform: scale(0.98);
+}
+
+.light-theme .button.primary {
+  background-color: var(--primary-light);
+  color: #fff;
+}
+.light-theme .button.primary:hover {
+  background-color: #4fa9c5; /* Um pouco mais escuro que --primary-light */
+}
+
+.dark-theme .button.primary {
+  background-color: var(--primary-dark);
+  color: #333;
+}
+.dark-theme .button.primary:hover {
+  background-color: #e0ac00; /* Um pouco mais escuro que --primary-dark */
+}
+
+.light-theme .button.secondary {
+  background-color: #6c757d;
+  color: white;
+}
+.light-theme .button.secondary:hover {
+  background-color: #5a6268;
+}
+
+.dark-theme .button.secondary {
+  background-color: #5a6268;
+  color: white;
+}
+.dark-theme .button.secondary:hover {
+  background-color: #495057;
+}
