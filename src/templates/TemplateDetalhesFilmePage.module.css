@@ -1,0 +1,72 @@
+/* src/templates/TemplateDetalhesFilmePage.module.css */
+.detailsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.light-theme .detailsContainer {
+  background-color: var(--card-bg-light);
+  border: 1px solid var(--border-light);
+}
+
+.dark-theme .detailsContainer {
+  background-color: var(--card-bg-dark);
+  border: 1px solid var(--border-dark);
+}
+
+
+@media (min-width: 768px) {
+  .detailsContainer {
+    flex-direction: row;
+  }
+}
+
+.posterSection {
+  flex: 1;
+  max-width: 300px; /* Limita o tamanho do poster */
+  margin: 0 auto; /* Centraliza em telas menores */
+}
+
+.poster {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.dark .poster {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+
+.infoSection {
+  flex: 2;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.light-theme .infoSection p {
+  color: #333;
+  line-height: 1.6;
+}
+.dark-theme .infoSection p {
+  color: #ddd;
+  line-height: 1.6;
+}
+
+.infoSection p strong {
+  font-weight: bold;
+}
+
+.light-theme .infoSection p strong {
+  color: var(--text-light);
+}
+.dark-theme .infoSection p strong {
+  color: var(--text-dark);
+}

@@ -1,0 +1,53 @@
+/* src/components/organisms/Header/Header.module.css */
+.header {
+  padding: 15px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.light-theme .header {
+  background-color: var(--background-light);
+  color: var(--text-light);
+  border-bottom: 1px solid var(--border-light);
+}
+.dark-theme .header {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+  border-bottom: 1px solid var(--border-dark);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  display: inline;
+}
+
+.link, .activeLink {
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding-bottom: 5px;
+}
+
+.light-theme .link { color: var(--text-light); }
+.light-theme .link:hover { color: var(--primary-light); border-bottom: 2px solid var(--primary-light); }
+.light-theme .activeLink { color: var(--primary-light); font-weight: bold; border-bottom: 2px solid var(--primary-light); }
+
+.dark-theme .link { color: var(--text-dark); }
+.dark-theme .link:hover { color: var(--primary-dark); border-bottom: 2px solid var(--primary-dark); }
+.dark-theme .activeLink { color: var(--primary-dark); font-weight: bold; border-bottom: 2px solid var(--primary-dark); }

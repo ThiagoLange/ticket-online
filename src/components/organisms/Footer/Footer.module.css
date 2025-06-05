@@ -1,0 +1,16 @@
+/* src/components/organisms/Footer/Footer.module.css */
+.footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: auto; /* Garante que o footer fique no final se o conteúdo for pequeno */
+}
+.light-theme .footer {
+  background-color: #f1f1f1;
+  color: var(--text-light);
+  border-top: 1px solid var(--border-light);
+}
+.dark-theme .footer {
+  background-color: #1e1e1e;
+  color: var(--text-dark);
+  border-top: 1px solid var(--border-dark);
+}

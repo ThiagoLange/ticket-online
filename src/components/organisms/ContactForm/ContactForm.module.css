@@ -1,0 +1,55 @@
+/* src/components/organisms/ContactForm/ContactForm.module.css */
+.form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.light-theme .form {
+  background-color: var(--card-bg-light);
+  border: 1px solid var(--border-light);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.dark-theme .form {
+  background-color: var(--card-bg-dark);
+  border: 1px solid var(--border-dark);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.checkboxGroup {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.checkbox {
+  margin-right: 10px;
+  width: auto; /* Override Input atom style if necessary */
+  accent-color: var(--primary-light); /* For light theme */
+}
+
+.dark-theme .checkbox {
+  accent-color: var(--primary-dark); /* For dark theme */
+}
+
+.checkboxLabel {
+  font-size: 0.9rem;
+}
+
+.light-theme .checkboxLabel {
+  color: var(--text-light);
+}
+.dark-theme .checkboxLabel {
+  color: var(--text-dark);
+}
+
+.form button {
+  width: 100%;
+}
