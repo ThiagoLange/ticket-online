@@ -1,0 +1,25 @@
+/* src/components/molecules/ThemeToggle/ThemeToggle.module.css */
+.themeToggleButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.light-theme .themeToggleButton {
+  color: var(--text-light);
+}
+.light-theme .themeToggleButton:hover {
+  background-color: rgba(0,0,0,0.1);
+}
+
+.dark-theme .themeToggleButton {
+  color: var(--text-dark);
+}
+.dark-theme .themeToggleButton:hover {
+  background-color: rgba(255,255,255,0.1);
+}
