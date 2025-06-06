@@ -27,7 +27,8 @@
 
 .poster {
   width: 100%;
-  height: auto; /* ou uma altura fixa, ex: 300px */
+  /* ALTERADO de 400px para 350px para diminuir o tamanho. Ajuste conforme necessário. */
+  height: 350px; 
   object-fit: cover;
 }
 
