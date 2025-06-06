@@ -27,7 +27,6 @@
 
 .poster {
   width: 100%;
-  /* ALTERADO de 400px para 350px para diminuir o tamanho. Ajuste conforme necessário. */
   height: 350px; 
   object-fit: cover;
 }
@@ -67,5 +66,5 @@
 
 .info button {
   width: 100%;
-  margin-top: auto; /* Empurra o botão para baixo */
+  margin-top: auto;
 }

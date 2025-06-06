@@ -31,12 +31,12 @@
 
 .checkbox {
   margin-right: 10px;
-  width: auto; /* Override Input atom style if necessary */
-  accent-color: var(--primary-light); /* For light theme */
+  width: auto;
+  accent-color: var(--primary-light);
 }
 
 .dark-theme .checkbox {
-  accent-color: var(--primary-dark); /* For dark theme */
+  accent-color: var(--primary-dark);
 }
 
 .checkboxLabel {

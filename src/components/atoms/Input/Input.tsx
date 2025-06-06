@@ -10,25 +10,20 @@ type InputAsProps = BaseProps & {
     as?: 'input';
 } & React.ComponentPropsWithRef<'input'>;
 
-// Define the props specifically for when the component renders a <textarea>.
 type TextareaAsProps = BaseProps & {
     as: 'textarea';
 } & React.ComponentPropsWithRef<'textarea'>;
 
-// Create a discriminated union for all possible props
 type InputProps = InputAsProps | TextareaAsProps;
 
 const Input = React.forwardRef(
   (props: InputProps, ref: React.ForwardedRef<HTMLInputElement | HTMLTextAreaElement>) => {
-    
-    // Destructure 'as', 'label', 'error', and 'className' directly from props.
-    // The rest of the props are collected in the 'rest' object.
+
     const { as = 'input', label, error, className, ...rest } = props;
 
     const elementId = props.id || props.name;
     const commonClasses = `${styles.input} ${error ? styles.inputError : ''} ${className || ''}`;
 
-    // Now, the conditional check uses the destructured 'as' variable.
     if (as === 'textarea') {
       return (
         <div className={styles.inputGroup}>
@@ -43,7 +38,6 @@ const Input = React.forwardRef(
       );
     }
 
-    // Default case: render an <input> element.
     return (
       <div className={styles.inputGroup}>
         {label && <label htmlFor={elementId} className={styles.label}>{label}</label>}

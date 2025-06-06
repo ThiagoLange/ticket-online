@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import type { Movie } from '../data/movieTypes';
 import Button from '../components/atoms/Button/Button';
 import Image from '../components/atoms/Image/Image';
-import styles from './TemplateDetalhesFilmePage.module.css'; // Crie este CSS module
+import styles from './TemplateDetalhesFilmePage.module.css';
 import { useTheme } from '../contexts/ThemeContext';
 
 interface TemplateDetalhesFilmePageProps {

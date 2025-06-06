@@ -1,7 +1,7 @@
 // src/components/organisms/ContactForm/ContactForm.tsx
 import React from 'react';
 import { useForm } from 'react-hook-form'; // Importa o hook useForm
-import type { SubmitHandler } from 'react-hook-form'; // Correction: Importa SubmitHandler como um tipo
+import type { SubmitHandler } from 'react-hook-form';
 import Button from '../../atoms/Button/Button';
 import Input from '../../atoms/Input/Input';
 import styles from './ContactForm.module.css';
@@ -45,7 +45,7 @@ const ContactForm: React.FC = () => {
       <Input
         label="Mensagem:"
         as="textarea"
-        rows={5} // Esta prop 'rows' DEVE ser aceita pela InputProps definida acima
+        rows={5}
         {...register('mensagem', { required: 'Mensagem é obrigatória' })}
         error={errors.mensagem?.message}
 />

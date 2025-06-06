@@ -2,7 +2,7 @@
 .footer {
   text-align: center;
   padding: 20px;
-  margin-top: auto; /* Garante que o footer fique no final se o conteúdo for pequeno */
+  margin-top: auto;
 }
 .light-theme .footer {
   background-color: #f1f1f1;

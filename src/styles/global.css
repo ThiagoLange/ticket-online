@@ -45,7 +45,7 @@ ul {
 
 main {
   padding: 20px;
-  min-height: calc(100vh - 120px); /* Ajustar conforme altura do Header e Footer */
+  min-height: calc(100vh - 120px); /* Ajusta conforme altura do Header e Footer */
 }
 
 .container {

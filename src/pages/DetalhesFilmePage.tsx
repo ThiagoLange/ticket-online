@@ -7,7 +7,6 @@ import type { Movie } from '../data/movieTypes';
 
 const DetalhesFilmePage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
-  // Em um app real, você buscaria o filme específico por ID
   const movie: Movie | undefined = mockMovies.find(m => m.id === id);
 
   return <TemplateDetalhesFilmePage movie={movie} />;

@@ -22,7 +22,6 @@
 @media (min-width: 768px) {
   .detailsContainer {
     flex-direction: row;
-    /* align-items: stretch; é o padrão, o que faz as colunas terem a mesma altura */
   }
 }
 
@@ -30,16 +29,12 @@
   flex: 1;
   max-width: 300px;
   margin: 0 auto;
-  /* Adicionado para permitir que a imagem filha (poster) use 100% da altura */
   display: flex; 
 }
 
 .poster {
   width: 100%;
-  /* A imagem agora ocupará 100% da altura do seu contêiner (.posterSection),
-     que por sua vez tem a mesma altura da seção de informações (.infoSection) */
   height: 100%;
-  /* 'contain' garante que a imagem inteira seja visível, sem distorção. */
   object-fit: contain; 
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);

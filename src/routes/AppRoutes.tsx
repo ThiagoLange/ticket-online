@@ -10,13 +10,11 @@ import MainLayout from '../templates/MainLayout';
 const AppRoutes: React.FC = () => {
   return (
     <Routes>
-      <Route element={<MainLayout />}> {/* MainLayout agora envolve todas as rotas */}
+      <Route element={<MainLayout />}>
         <Route path="/" element={<InicioPage />} />
         <Route path="/filmes" element={<FilmesPage />} />
         <Route path="/filmes/:id" element={<DetalhesFilmePage />} />
         <Route path="/contato" element={<ContatoPage />} />
-        {/* Adicione uma rota curinga para página não encontrada, se desejar */}
-        {/* <Route path="*" element={<NotFoundPage />} /> */}
       </Route>
     </Routes>
   );

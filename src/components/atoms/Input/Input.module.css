@@ -19,7 +19,7 @@
 }
 
 .input {
-  width: calc(100% - 22px); /* Consider padding and border */
+  width: calc(100% - 22px);
   padding: 10px;
   border: 1px solid var(--border-light);
   border-radius: 4px;
@@ -55,7 +55,7 @@ textarea.input {
 }
 
 .inputError {
-  border-color: red !important; /* Ensure high specificity */
+  border-color: red !important;
 }
 
 .errorMessage {
